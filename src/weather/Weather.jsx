@@ -19,7 +19,7 @@ const LocationSearch = ({ locationChange }) => {
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
-        placeholder="City, Country"
+        placeholder="City"
         className="location-search-input"
       />
     </form>
@@ -78,8 +78,6 @@ const Weather = () => {
         alert(response.data.message);
       })
   }, [location]);
-
-
 
   return (
     <div className="weather-block">
